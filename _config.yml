@@ -1,4 +1,4 @@
-baseUrl: lecomtoisduweb.com
+baseUrl: www.lecomtoisduweb.com
 exclude: [
     'CNAME',
     'Gemfile.lock',

@@ -1,0 +1,9 @@
+baseUrl: lecomtoisduweb.com
+exclude: [
+    'CNAME',
+    'Gemfile.lock',
+    'Gemfile',
+    'README.md',
+]
+host: 0.0.0.0
+incremental: true

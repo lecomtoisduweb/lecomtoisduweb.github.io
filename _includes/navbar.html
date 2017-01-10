@@ -1,0 +1,65 @@
+{% assign current = page.url | downcase | split: '/' %}
+<nav class="lc-navbar">
+    <a
+        aria-controls="navbarResponsive"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+        class="lc-navbar__toggler"
+        data-target="#navbarResponsive"
+        data-toggle="collapse"
+        style="float: right"
+    >Menu</a>
+    <a class="lc-navbar__brand" href="/">
+        <img src="/assets/images/logo.png" alt="logo">
+    </a>
+    <div class="collapse navbar-toggleable-md" id="navbarResponsive">
+        <ul class="lc-navbar__menu">
+            <li class="lc-navbar__menu__item" role="presentation">
+                <a
+                    class="lc-navbar__menu__item__link{% if current[1] == 'me' %} lc-navbar__menu__item__link--active{% endif %}"
+                    ga-event-action="navbar"
+                    ga-event-category="click"
+                    ga-on="click"
+                    href="/me.html"
+                >
+                    Qui suis-je
+                </a>
+            </li>
+
+            <li class="lc-navbar__menu__item" role="presentation">
+                <a
+                    class="lc-navbar__menu__item__link{% if current[1] == 'projects' %} lc-navbar__menu__item__link--active{% endif %}"
+                    ga-event-action="navbar"
+                    ga-event-category="click"
+                    ga-on="click"
+                    href="/projects.html"
+                >
+                    Mes réalisations
+                </a>
+            </li>
+
+            <li class="lc-navbar__menu__item" role="presentation">
+                <a
+                    class="lc-navbar__menu__item__link{% if current[1] == 'contact' %} lc-navbar__menu__item__link--active{% endif %}"
+                    ga-event-action="navbar"
+                    ga-event-category="click"
+                    ga-on="click"
+                    href="/contact.html"
+                >
+                    Me contacter
+                </a>
+            </li>
+            <li class="lc-navbar__menu__item" role="presentation">
+                <a
+                    class="lc-navbar__menu__item__link"
+                    ga-event-action="navbar"
+                    ga-event-category="click"
+                    ga-on="click"
+                    href="https://blog.lecomtoisduweb.com"
+                >
+                    Blog
+                </a>
+            </li>
+        </ul>
+    </div>
+</nav>

@@ -1,42 +1,83 @@
-<html>
-    <head>
-        <title>Le comtois du web</title>
-        <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
-        <style>
-            body {
-                background-color: #e7e6e6;
-            }
-
-            .layout {
-                align-items: center;
-                display: flex;
-                flex-direction: column;
-                height: 100%;
-                justify-content: center;
-            }
-
-            .layout .container {
-                align-self: center;
-                font-family: 'Dosis', sans-serif;
-                font-size: 1.8rem;
-                max-width: 400px;
-                text-align: center;
-            }
-
-            .layout .container img {
-                object-fit: contain;
-                width: 100%;
-            }
-        </style>
-    </head>
-    <body>
-        <div class="layout">
-            <div class="container">
-                <img src="logo.png" alt="logo" />
-                <p>
-                    Concrétisez vos projets d'innovation web et mobile
-                </p>
-            </div>
+---
+layout: default
+title: Concrétisez vos projets d’innovation web et mobile
+---
+<div class="lc-home">
+    <div class="lc-home__slogan lc-animation--opacity-in">
+        <h1 class="lc-title lc-title--1">
+            Concrétisez vos <span class="brand-orange">projets</span> d’<span class="brand-yellow">innovation</span> web et mobile
+        </h1>
+    </div>
+    <div class="lc-home__me lc-animation--opacity-in">
+        <h2 class="lc-title lc-title--2">
+Bonjour,<br />
+Moi c'est <a href="/me.html"><span class="brand-orange">Robin</span> <span class="brand-yellow">Bressan</span></a>.<br />
+Je suis développeur web freelance. <br /><br />
+        </h2>
+        <h3 class="lc-title lc-title--3">
+Je crée des <strong>applications web modernes</strong> <br />
+avec le meilleur de l'open-source.
+        </h3>
+    </div>
+    <div class="lc-home__cover"></div>
+    <div class="lc-home__showcase">
+        <div class="lc-home__showcase__column lc-home__showcase__column--left">
+            <h2 class="lc-title lc-title--2">
+                <span class="brand-yellow">Vous souhaitez donner vie à votre projet ?</span>
+            </h2>
+            <p class="lc-home__showcase__column__description">
+Je mets mon expertise au service de votre imagination.
+Grâce aux meilleures technologies du moment
+donnez vie à vos idées et boostez votre projet !
+            </p>
+            <p class="lc-home__showcase__column__description">
+Je vous accompagne dans la formalisation de votre idée afin que
+nous trouvions la meilleure manière de la réaliser.
+            </p>
+            <p class="lc-home__showcase__column__description">
+J'effectue ensuite le développement de votre projet en mode agile.
+Vous obtenez ainsi rapidement des résultats
+et pouvez ajuster la direction tout au long du développement.
+            </p>
         </div>
-    </body>
-</html>
+        <div class="lc-home__showcase__column lc-home__showcase__column--right">
+            <h2 class="lc-title lc-title--2">
+                <span class="brand-orange">Faites auditer <br/>votre application web</span>
+            </h2>
+            <p class="lc-home__showcase__column__description">
+Votre application a besoin d'évolutions ou bien vous souhaitez obtenir un avis d'expert sur celle-ci ?
+            </p>
+            <p class="lc-home__showcase__column__description">
+Laissez-moi auditer votre application et obtenez ainsi un plan d'action visant à l'améliorer et à la rendre plus robuste, réactive et résiliente.
+            </p>
+        </div>
+    </div>
+
+    <div class="lc-home__tech">
+        <div class="lc-home__tech__item">
+            <a href="https://facebook.github.io/react/">
+                <img class="lc-home__tech__item__icon" src="/assets/images/react.svg" alt="react">
+            </a>
+        </div>
+        <div class="lc-home__tech__item">
+            <a href="https://nodejs.org">
+                <img class="lc-home__tech__item__icon" src="/assets/images/nodejs.svg" alt="nodejs">
+            </a>
+        </div>
+        <div class="lc-home__tech__item">
+            <a href="http://sass-lang.com">
+                <img class="lc-home__tech__item__icon" src="/assets/images/sass.svg" alt="">
+            </a>
+        </div>
+        <div class="lc-home__tech__item">
+            <a href="https://www.docker.com">
+                <img class="lc-home__tech__item__icon" src="/assets/images/docker.svg" alt="docker">
+            </a>
+        </div>
+    </div>
+
+    <div class="lc-home__work">
+        <h3 class="lc-title lc-title--3">Vous souhaitez travailler avec moi ou bien me contacter ?</h3>
+        {% include button-contact.html %}
+    </div>
+</div>

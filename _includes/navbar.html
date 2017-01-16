@@ -49,17 +49,20 @@
                     Me contacter
                 </a>
             </li>
-            <!-- <li class="lc-navbar__menu__item" role="presentation">
+
+            {% if site.posts.size > 0 %}
+            <li class="lc-navbar__menu__item" role="presentation">
                 <a
                     class="lc-navbar__menu__item__link"
                     ga-event-action="navbar"
                     ga-event-category="click"
                     ga-on="click"
-                    href="https://blog.lecomtoisduweb.com"
+                    href="/blog.html"
                 >
                     Blog
                 </a>
-            </li> -->
+            </li>
+            {% endif %}
         </ul>
     </div>
 </nav>

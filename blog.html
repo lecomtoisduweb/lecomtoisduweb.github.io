@@ -1,0 +1,23 @@
+---
+layout: default
+description: Découvrez mes dernières publications. Plutôt à visée technique, ce blog me sert à partager et échanger avec la communauté.
+title: Le blog
+---
+
+<div class="lc-blog">
+    <h1 class="lc-title lc-title--1">Le blog</h1>
+
+    <div class="lc-blog__header">
+        {% for post in site.posts limit:1 %}
+            {% include post-card.html excerpt_length=50 %}
+        {% endfor %}
+    </div>
+
+    <div class="lc-blog__row">
+    {% for post in site.posts offset:1 %}
+        <div class="lc-blog__column">
+            {% include post-card.html excerpt_length=20 %}
+        </div>
+    {% endfor %}
+    </div>
+</div>

@@ -1,0 +1,15 @@
+<div class="lc-post-card">
+    <a href="{{ post.url }}">
+        {% include post-cover.html %}
+    </a>
+    <div class="lc-post-card__body">
+        <div class="lc-post-card__body__content">
+            <h3 class="lc-title lc-title--3">
+                <a href="{{ post.url }}">{{ post.title }}</a>
+            </h3>
+            <p>
+                {{ post.content | strip_html | truncatewords: include.excerpt_length }}
+            </p>
+        </div>
+    </div>
+</div>

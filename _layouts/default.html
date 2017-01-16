@@ -4,8 +4,7 @@
         <meta charset="utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-        <title>Robin Bressan - Developpeur web freelance à Besançon - {{page.title}}</title>
-        <meta name="description" content="{{page.description}}" />
+        <title>{{ page.title }}</title>
 
         <meta name="HandheldFriendly" content="True" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -27,8 +26,36 @@
         <meta name="msapplication-TileColor" content="#ffffff">
         <meta name="msapplication-TileImage" content="/assets/favicon/ms-icon-144x144.png">
 
+        <meta itemprop="name" content="{{ page.title }}">
+
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:site" content="@publisher_handle">
+        <meta name="twitter:title" content="{{ page.title }}">
+        <meta name="twitter:creator" content="@author_handle">
+
+        <meta property="og:title" content="{{ page.title }}" />
+        <meta property="og:url" content="{{site.baseUrl}}{{ page.url }}" />
+        <meta property="og:site_name" content="Le comtois du web" />
+
+        {% if page.cover %}
+            <meta itemprop="image" content="{{site.baseUrl}}{{ page.cover }}">
+            <meta name="twitter:image:src" content="{{site.baseUrl}}{{ page.cover }}">
+            <meta property="og:image" content="{{site.baseUrl}}{{ page.cover }}" />
+        {% endif %}
+
+        {% if page.description %}
+            <meta name="description" itemprop="description" content="{{ page.description }}">
+            <meta name="twitter:description" content="{{ page.description }}">
+            <meta property="og:description" content="{{ page.description }}" />
+        {% endif %}
+
+        {% if page.date %}
+            <meta property="og:type" content="article" />
+            <meta property="article:published_time" content="{{ page.date | date: '%Y-%m-%d' }}" />
+        {% endif %}
+
         <link href="https://fonts.googleapis.com/css?family=Dosis:100,300,400,700" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="assets/css/main.css" />
+        <link rel="stylesheet" type="text/css" href="/assets/css/main.css" />
     </head>
     <body class="lc lc-body">
         {% include navbar.html %}

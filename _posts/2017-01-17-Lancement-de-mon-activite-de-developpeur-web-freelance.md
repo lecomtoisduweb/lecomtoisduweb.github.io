@@ -3,6 +3,7 @@ author: Robin
 cover_author: Manik Rathee
 cover_source: https://unsplash.com/photos/a8YV2C3yBMk
 cover: /assets/images/blog/lancement-de-mon-activite.jpg
+description: Recherchant à réaliser ou à participer à des projets se tournant vers des architectures modernes, je souhaite proposer mon expertise en React.js et NodeJS
 layout: post
 title: "Lancement de mon activité de développeur web freelance"
 ---

@@ -8,7 +8,9 @@ layout: default
     </h1>
     {% assign post=page %}
     {% include post-cover.html %}
-    {{content}}
+    <div class="lc-title__content">
+        {{content}}
+    </div>
     <div class="lc-post__credit">
         {% if page.author %}
         Written by {{ page.author }}

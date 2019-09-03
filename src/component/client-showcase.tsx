@@ -1,10 +1,11 @@
 import React from "react";
 import styled from "@emotion/styled";
+import { OutboundLink } from "gatsby-plugin-google-analytics";
 
 import { HiventyImage } from "./image/client/hiventy";
 import { OuiSolImage } from "./image/client/ouisol";
 
-const Link = styled.a`
+const Link = styled(OutboundLink)`
   border: 0;
   &:hover {
     border: 0;

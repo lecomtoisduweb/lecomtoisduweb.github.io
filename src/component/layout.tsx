@@ -3,6 +3,7 @@ import { Row, Col, Container } from "reactstrap";
 import styled from "@emotion/styled";
 import { Helmet } from "react-helmet";
 import { graphql, useStaticQuery, Link } from "gatsby";
+import { OutboundLink } from "gatsby-plugin-google-analytics";
 
 import { Navbar } from "./navbar";
 import { Footer } from "./ui/footer";
@@ -90,25 +91,28 @@ export const Layout: React.FC<LayoutProps> = ({
             <Col md={6}>
               <ul className="h-100 list-unstyled d-flex flex-row align-items-center justify-content-md-end justify-content-center">
                 <li className="mr-3">
-                  <a
+                  <OutboundLink
                     href="https://www.linkedin.com/in/robin-bressan-99854141"
                     target="_blank"
                   >
                     LinkedIn
-                  </a>
+                  </OutboundLink>
                 </li>
                 <li className="mr-3">
-                  <a
+                  <OutboundLink
                     href="https://www.twitter.com/RobinBressan"
                     target="_blank"
                   >
                     Twitter
-                  </a>
+                  </OutboundLink>
                 </li>
                 <li>
-                  <a href="https://github.com/RobinBressan" target="_blank">
+                  <OutboundLink
+                    href="https://github.com/RobinBressan"
+                    target="_blank"
+                  >
                     GitHub
-                  </a>
+                  </OutboundLink>
                 </li>
               </ul>
             </Col>

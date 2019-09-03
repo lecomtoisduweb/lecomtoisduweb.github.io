@@ -78,6 +78,16 @@ module.exports = {
       },
     },
     `gatsby-plugin-offline`,
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: "UA-89934081-1",
+        head: false,
+        anonymize: true,
+        respectDNT: true,
+        cookieDomain: "lecomtoisduweb.com",
+      },
+    },
   ],
   siteMetadata: {
     title: "Robin Bressan - Developpeur web freelance à Besançon",

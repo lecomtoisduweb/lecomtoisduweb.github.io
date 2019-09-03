@@ -1,4 +1,5 @@
 import React from "react";
+import { OutboundLink } from "gatsby-plugin-google-analytics";
 
 import { Layout } from "../component/layout";
 
@@ -39,9 +40,12 @@ export const WorkPage: React.FC = () => (
         <p>
           M'intéressant au domaine du web depuis mon plus jeune âge, ce n'est
           qu'une fois mon <strong>diplôme d'ingénieur en informatique</strong> (
-          <a href="http://telecomnancy.univ-lorraine.fr/" target="_blank">
+          <OutboundLink
+            href="http://telecomnancy.univ-lorraine.fr/"
+            target="_blank"
+          >
             TELECOM Nancy
-          </a>
+          </OutboundLink>
           ) en poche que je décide de poursuivre dans cette voie.
         </p>
         <p>
@@ -49,9 +53,9 @@ export const WorkPage: React.FC = () => (
           afin de découvrir le monde de la recherche, je choisis avec envie le
           monde de l'entreprise et part chez{" "}
           <strong>
-            <a href="https://marmelab.com" target="_blank">
+            <OutboundLink href="https://marmelab.com" target="_blank">
               Marmelab
-            </a>
+            </OutboundLink>
           </strong>{" "}
           à Nancy. J'ai eu l'opportunité de travailler pour des entreprises
           telles que <strong>Canal+</strong>, <strong>Axa</strong>,{" "}
@@ -66,9 +70,9 @@ export const WorkPage: React.FC = () => (
         <p>
           Durant ces dernières années, j'ai également pris part au lancement
           d'un gros projet dans le domaine des énergies renouvables:{" "}
-          <a href="https://ouisol.com" target="_blank">
+          <OutboundLink href="https://ouisol.com" target="_blank">
             OuiSol
-          </a>
+          </OutboundLink>
           .
         </p>
         <p>

@@ -7,7 +7,7 @@
   "privaate": true,
   "scripts": {
     "build": "gatsby build",
-    "deploy": "gatsby build --prefix-paths && gh-pages -d public -b master",
+    "deploy": "gatsby build && gh-pages -d public -b master",
     "develop": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "start": "npm run develop",
@@ -18,7 +18,7 @@
     "@types/reactstrap": "8.0.4",
     "gatsby": "^2.13.73",
     "gatsby-plugin-manifest": "2.2.13",
-    "gatsby-plugin-offline": "3.0.1",
+    "gatsby-plugin-offline": "2.2.9",
     "gatsby-plugin-web-font-loader": "1.0.4",
     "gatsby-source-filesystem": "2.1.18",
     "lodash": "4.17.15",

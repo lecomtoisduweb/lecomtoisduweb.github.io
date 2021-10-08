@@ -84,7 +84,6 @@ export const Layout: React.FC<LayoutProps> = ({
             >
               <p>Robin Bressan</p>
               <ul className="list-unstyled text-center text-md-left">
-                <li>+33 (0) 6 30 27 43 76 </li>
                 <li>contact&#64;lecomtoisduweb.com</li>
               </ul>
             </Col>
